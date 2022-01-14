@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1069395716727",
+    "project_id": "corresm-2e866",
+    "storage_bucket": "corresm-2e866.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069395716727:android:8ce15f11f9d5d6fecdf472",
+        "android_client_info": {
+          "package_name": "com.arge.correosm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069395716727-vim9mikce9lpf4hfimm1o1unabgprpau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arge.correosm",
+            "certificate_hash": "3ad5212373de66f83852561aa2b2b95756476d30"
+          }
+        },
+        {
+          "client_id": "1069395716727-e4poichjpg5egv18fooil6dfqjegpcls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyBvpvF6XTl0KxNzBzg-YTOqS7UXOOmZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069395716727-e4poichjpg5egv18fooil6dfqjegpcls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
