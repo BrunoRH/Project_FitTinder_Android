@@ -26,6 +26,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.arge.correosm.map_alumnoB;
 import com.arge.correosm.map_alumnoA;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import dmax.dialog.SpotsDialog;
 
 public class LoginActivity extends AppCompatActivity {
@@ -71,9 +74,11 @@ public class LoginActivity extends AppCompatActivity {
     private void login() {
         String email = mTextInputEmail.getText().toString();
         String password = mTextInputPassword.getText().toString();
-
+        Pattern patron = Pattern.compile("[a-zA-Z0-9_-]+@[a-zA-Z.]+\\.[a-zA-Z]+");
+        Matcher mat = patron.matcher(email);
+        boolean cumplePatron = mat.find();
         if(!email.isEmpty() && !password.isEmpty()){
-            if(password.length() >= 5){
+            if(password.length() >= 5 && cumplePatron){
                 mDialog.show();
                 mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -97,7 +102,13 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
             }else{
-                Toast.makeText(LoginActivity.this, "La contraseña debe tener mas de 5 caractener", Toast.LENGTH_SHORT).show();
+                if (!cumplePatron){
+                    Toast.makeText(LoginActivity.this, "Correo no valido.", Toast.LENGTH_SHORT).show();
+                }
+                else if(password.length() >= 5){
+                    Toast.makeText(LoginActivity.this, "La contraseña debe tener mas de 5 caractener", Toast.LENGTH_SHORT).show();
+                }
+
 
             }
         }else{
