@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/drawable-xxhdpi/bordertextview.xml" value="0.2578125" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/drawable-xxhdpi/listevent.xml" value="0.2578125" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/layout/activity_login.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/layout/activity_main.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/layout/fragment_activity__list_eventos.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/layout/fragment_activity__perfil_user.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/layout/fragment_home_event.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/proyecto_nuevo/CorreUnmsmOficial/app/src/main/res/menu/bottom_menu.xml" value="0.24166666666666667" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/drawable/rounded_button.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/layout/activity_detail_reques.xml" value="0.18" />

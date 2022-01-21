@@ -5,63 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/black"
     tools:context=".activities.MainActivity">
-
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEdn_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:src="@drawable/runner_2"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Es un aplicativo para encontrar personar para correr"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:layout_margin="40dp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="bottom"
-            android:layout_margin="20dp"
-            >
-
-            <Button
-                android:id="@+id/btnAlumnoA"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_button"
-                android:text="Alumno A"
-                android:backgroundTint="@color/white"
-                android:layout_marginRight="5dp"
-
-                />
-            <Button
-                android:id="@+id/btnAlumnoB"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#17B97C"
-                android:text="Alumno B"
-                android:textColor="@color/white"
-                android:layout_marginLeft="5dp"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="410dp"
+        android:layout_height="658dp"
+        android:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navGraph="@navigation/my_nav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
